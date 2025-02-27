@@ -3,7 +3,6 @@ const fs = require('fs').promises;
 const path = require('path');
 
 const app = express();
-const PORT = process.env.PORT || 3000;
 
 app.get('/feed', async (req, res) => {
     try {
@@ -16,6 +15,6 @@ app.get('/feed', async (req, res) => {
     }
 });
 
-app.listen(PORT, () => {
-    console.log(`RSS feed server running on port ${PORT}`);
-});
+// Remove the app.listen() call for Vercel deployment
+// Export the Express app
+module.exports = app;
