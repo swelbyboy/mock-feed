@@ -1,15 +1,12 @@
 {
   "version": 2,
-  "builds": [
-    {
-      "src": "server.js",
-      "use": "@vercel/node"
-    }
-  ],
   "routes": [
     {
       "src": "/feed",
-      "dest": "server.js"
+      "dest": "/mock-feed.xml",
+      "headers": {
+        "Content-Type": "application/rss+xml"
+      }
     }
   ]
 } 
