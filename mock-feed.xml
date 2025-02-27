@@ -1,6 +1,8 @@
 <?xml version="1.0" encoding="UTF-8" ?>
 <rss version="2.0" 
      xmlns:content="http://purl.org/rss/1.0/modules/content/"
+     xmlns:dc="http://purl.org/dc/elements/1.1/"
+     xmlns:media="http://search.yahoo.com/mrss/"
      xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>Mock News Feed</title>
@@ -12,17 +14,21 @@
     
     <item>
       <title>CM de hoje (26/02/2025)</title>
+      <dc:creator>Correio da Manhã</dc:creator>
       <link>https://www.cmjornal.pt/mais-cm/capas/detalhe/cm-de-hoje-26-02-2025</link>
       <guid>https://www.cmjornal.pt/mais-cm/capas/detalhe/cm-de-hoje-26-02-2025</guid>
       <pubDate>Wed, 26 Feb 2025 06:30:00 GMT</pubDate>
-      <description>Capa do Correio da Manhã de hoje</description>
-      <content:encoded><![CDATA[<p>Capa do Correio da Manhã de hoje (26/02/2025)</p><img src="https://cdn.cmjornal.pt/images/2025-02/img_400x516uu2025-02-25-23-25-26-2195148.jpg" alt="Capa do Correio da Manhã" />]]></content:encoded>
-      <enclosure url="https://cdn.cmjornal.pt/images/2025-02/img_400x516uu2025-02-25-23-25-26-2195148.jpg" type="image/jpeg" />
-      <image>
-        <url>https://cdn.cmjornal.pt/images/2025-02/img_400x516uu2025-02-25-23-25-26-2195148.jpg</url>
-        <title>Capa do Correio da Manhã</title>
-        <link>https://www.cmjornal.pt/mais-cm/capas/detalhe/cm-de-hoje-26-02-2025</link>
-      </image>
+      <description><![CDATA[ <p>Capa do Correio da Manhã de hoje</p> ]]></description>
+      <content:encoded><![CDATA[ <p>Capa do Correio da Manhã de hoje (26/02/2025)</p> ]]></content:encoded>
+      <media:content 
+        type="image/jpeg" 
+        url="https://cdn.cmjornal.pt/images/2025-02/img_400x516uu2025-02-25-23-25-26-2195148.jpg"
+        height="516"
+        width="400">
+        <media:title>Capa do Correio da Manhã</media:title>
+        <media:description type="plain"><![CDATA[ Capa do Correio da Manhã de hoje (26/02/2025) ]]></media:description>
+        <media:credit role="publisher" scheme="urn:ebu"><![CDATA[ Correio da Manhã ]]></media:credit>
+      </media:content>
     </item>
   </channel>
 </rss>
